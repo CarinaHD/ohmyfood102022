@@ -1,0 +1,10 @@
+
+.all-menu {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Flex', 'sans serif';
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width:100%;
+}
