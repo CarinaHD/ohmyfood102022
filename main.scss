@@ -1,0 +1,354 @@
+@use 'components/cards';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Shrikhand&display=swap');
+
+
+h1 {
+    font-family: 'Shrikhand', 'cursive';
+    display: block;
+}
+
+button {
+    border: none;
+    background: transparent;
+    padding: 25px 0;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    position: relative;
+    margin-right: 5%;
+}
+
+
+.title-restaurant {
+    font-family: 'Roboto Flex', 'sans serif';
+    font-size: 25px;
+}
+
+.title-menu {
+    font-family: 'Roboto flex';
+    font-weight: lighter;
+    border-bottom: 3px solid #99E2D0;
+    width: 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+
+}
+
+.return {
+    cursor: pointer;
+    color: black;
+    justify-content: flex-start;
+    position: relative;
+    top: 35px;
+    margin-left: 20px;
+}
+
+.title {
+    align-items: center;
+    justify-content: center;
+}
+
+/*titre ohmyfood!*/
+.big-title {
+    font-family: 'Shrikhand', 'cursive';
+    color: black;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fa-arrow-left:hover {
+    color: #9356DC;
+}
+
+/*image du restaurant*/
+.img-restaurant {
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+
+.title-restaurant-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-restaurant {
+    font-family: 'Shrikhand','cursive';
+}
+
+.far {
+    font-size: x-large;
+    align-items: center;
+    border-color: black;
+    position: absolute;
+    right: 35px;
+    margin-top: 25px;
+}
+
+.fas {
+    font-size: x-large;
+    align-items: center;
+    position: absolute;
+    right: 35px;
+    margin-top: 25px;
+    border-color:black;
+    opacity:0;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.fas:hover {
+    opacity: 1;
+    color: transparent;
+    background-image:linear-gradient(to bottom, #9356DC,#FF79DA);
+    background-clip:text;
+    -webkit-background-clip:text;
+} 
+
+
+.menu-list {
+
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 40px 40px 0 0;
+    background-color: #F2F2F2;
+    z-index: 1;
+    position: relative;
+    margin-top: -40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sousmenu {
+    width: 90%;
+    height: 50%;
+}
+
+.menulegend {
+    width: 100%;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    padding: 0 15px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px 10px 10px 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    animation: slide-top 1500ms both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.menulegend2{
+    animation: slide-top 500ms both;
+}
+.menulegend3{
+    animation: slide-top 500ms 100ms both;
+}
+.menulegend4{
+    animation:slide-top 500ms 200ms both;
+}
+
+.menulegend:hover .checkbutton{
+    margin:0;
+}
+
+.menulegend-item {
+    width: 95%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+        &:hover {
+        transform: translate (100%)
+    }
+}
+
+h3{
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.textlegend {
+    font-weight: lighter;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.checkbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99E2D0;
+    font-size: 35px;
+    overflow: hidden;
+    width: 26%;
+    margin: -10px -175px -10px 0px;
+    position: relative;
+    right: -7%;
+    transition: all 500ms ease-in;
+}
+
+
+.fa-circle-check {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    background-color: #99E2D0;
+    color: white;
+}
+
+.menulegend:hover .fa-circle-check {
+    animation: rotate-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes rotate-in-center {
+    0% {rotate:-360deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+
+}
+
+.circle-check {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width:768px) {
+    .circle-check{
+        margin-left: 15px;
+    }
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order {
+    font-family: 'Roboto flex','sans serif';
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    box-shadow: grey 0px 8px 10px -5px;
+    margin: 25px 25px 25px 35px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+
+    &:hover {
+        transform: scale(1.15)
+    }
+
+}
+
+/*Footer*/
+footer {
+    background-color: #353535;
+    color: white;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px;
+}
+
+h4 {
+    font-family: 'Shrikhand', 'sans serif';
+    font-size: 30px;
+    text-align: center;
+}
+
+.ulfooter {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listfooter {
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-icon {
+    color: white;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    padding: 1px 6px;
+    margin:0;
+}
+
+.textfooter{
+    font-family: 'Roboto Flex', 'sans serif';
+    text-decoration: none;
+    color: white;
+    align-items: flex-start;
+    margin: 16px 0px;
+}
+
+
+@media (max-width:768px) {
+    .ulfooter {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3fff9cbeef.js" crossorigin="anonymous"></script>
+    <title>Ohmyfood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Shrikhand&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--spinner chargement de la page-->
+    <div class="loading-spinner">
+        <p class="fade">ohmyfood
+        </p>
+    </div>
+    <!--en-tête-->
+    <header>
+        <h1 class="big-title">ohmyfood</h1>
+    </header>
+    <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <form method="post" action="traitement.php">
+            <input type="text" value="Paris, Belleville">
+        </form>
+    </div>
+    <div class="reservation">
+        <p class="firstp">Réservez le menu qui vous convient</p>
+        <p class="secondp">Découvrez des restaurants d'exception,<br>sélectionnés par nos soins.</p>
+        <button class="btn-explore">Explorer nos restaurants</button>
+    </div>
+    <!--select filters-->
+    <section class="filterfonctionnement">
+        <h2 class="Fonctionnement">Fonctionnement</h2>
+        <nav class="navfonction">
+            <ol class="threefilters">
+                <li class="firstchoice">
+                    <div class="btnfonction">
+                        <span class="number">1</span>
+                        <button class="icon"><i class="fa-solid fa-mobile-screen-button"></i></button>
+                        <p class="textfonction">Choisissez un restaurant</p>
+                    </div>
+                </li>
+                <li class="secondchoice">
+                    <div class="btnfonction">
+                        <span class="number">2</span>
+                        <button class="icon">
+                            <i class="fa-solid fa-list-ul"></i>
+                        </button>
+                        <p class="textfonction">Composez votre menu</p>
+                    </div>
+                </li>
+                <li class="thirdchoice">
+                    <div class="btnfonction">
+                        <span class="number">3</span>
+                        <button class="icon">
+                            <i class="fa-solid fa-store"></i>
+                        </button>
+                        <p class="textfonction">Dégustez au restaurant</p>
+                    </div>
+                </li>
+            </ol>
+        </nav>
+    </section>
+    <!--select restaurant-->
+    <section class="restaurants">
+        <h2>Restaurants</h2>
+        <div class="cardrestaurant">
+            <a class="choicerestaurant" href="lapalettedugout.html">
+                <div class="new">Nouveau</div>
+                <img class="imgcard" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo">
+                <div class="zonetext">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </a>
+            <a class="choicerestaurant" href="lanoteenchantee.html">
+                <div class="new">Nouveau</div>
+                <img class="imgcard" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo">
+                <div class="zonetext">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </a>
+            <a class="choicerestaurant" href="alafrancaise.html">
+                <img class="imgcard" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo">
+                <div class="zonetext">
+                    <h3>A la française</h3>
+                    <p>Cité Rouge</p>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </a>
+            <a class="choicerestaurant" href="ledelicedessens.html">
+                <img class="imgcard" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="photo">
+                <div class="zonetext">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                </div>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </a>
+        </div>
+    </section>
+    <!--Bas de page Footer-->
+    <footer>
+        <h4>ohmyfood</h4>
+        <nav class="navfooter">
+            <ul class="ulfooter">
+                <li class="listfooter">
+                    <button class="footer-icon"><i class="fa-solid fa-utensils"></i></button>
+                    <p class="textfooter">Proposer un restaurant</p>
+                </li>
+                <li class="listfooter">
+                    <button class="footer-icon"><i class="fa-solid fa-handshake-angle"></i></button>
+                    <p class="textfooter">Devenir partenaire</p>
+                </li>
+                <li class="listfooter">
+                    <p class="textfooter">Mentions légales</p>
+                </li>
+                <li class="listfooter">
+                    <a class="textfooter" href="mailto:carinadestours@gmail.com">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
